@@ -1,0 +1,355 @@
+@import url(fonts.css);
+
+html{
+
+}
+
+body{
+  font-family:'source_sans_pro', sans-serif;
+}
+
+body.partial{
+  width:430px;
+  margin:20px auto;
+}
+
+.header{
+  width:100%;
+  height:65px;
+  background:rgb(210, 222, 224);
+
+  z-index:100;
+  position:absolute;
+  top:0;
+}
+
+.main{
+  margin-top:65px;
+  width:1300px;
+}
+
+.main div{
+  float:left;
+}
+
+.card, .back-card, .card-small{
+  display: table; 
+  color:#fff;
+}
+
+.card, .card-small{
+  width:380px;
+  height:209px;
+  margin:0;
+  background:rgba(14,47,61, 1);
+  opacity:1;
+  -webkit-transform: perspective(50em) rotateX(0deg); 
+  -webkit-transition: all 0.4s ease;
+
+  transform: perspective(50em) rotateX(0deg); 
+  transition: all 0.4s ease;
+
+  background-image: url(../images/Pearson_Logo.png);
+  background-size: 18%;
+  background-repeat: no-repeat;
+  background-position:bottom left;
+}
+
+.card-small{
+  width:200px;
+  height:105px;
+
+  background-image: url(../images/Pearson_Logo.png);
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position:bottom left;
+}
+
+.card.flip, .card-small.flip{
+  opacity:0.1;
+  -webkit-transform: perspective(50em) rotateX(90deg);
+  -webkit-transition: all 0.3s ease;
+  
+  transform: perspective(50em) rotateX(90deg);
+  transition: all 0.3s ease;
+}
+
+.card p, .card-small p{
+  font-family:'source_sans_pro', sans-serif;
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center; 
+  font-size:36px;
+  color:rgba(210,222,224, 1);
+  font-weight:400;
+}
+
+.card p{
+  text-align:left;
+  display:block;
+  float:left;
+  clear:both;
+  margin:10px 0 0 0;
+  padding-left:10px !important;
+}
+
+.card span.meaning{
+  text-align:left;
+  display:block;
+  float:left;
+  clear:both; 
+  padding-left:10px;
+}
+
+.hidden{
+  display:none;
+}
+
+.card-small p{
+  font-size:28px;
+}
+
+.card p, .card-small p{
+  padding-left:30px;
+}
+
+.back-card p{
+  font-size:16px;
+  color:rgba(14,47,61, 1);
+}
+
+.card:after, .card-small:after{
+  content: '';
+  display: block;
+  right: -30px;
+  bottom: -1px;
+  position: absolute;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid rgba(210,222,224, 1);
+}
+
+.back-card:after{
+  border-left:rgba(14,47,61, 1);
+}
+
+.card:before, .card-small:before{
+    content: '';
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    bottom: 28px;
+    background: rgba(14,47,61, 1);
+    border-right: 2px  solid rgba(14,47,61, 1);
+}
+  
+.card, .back-card, .card p, .card-small p{
+  cursor: pointer;
+}  
+
+h1{
+  font-weight:300;
+  font-size:32px;
+  margin:0;
+  padding:10px 5px;
+}
+
+h2{
+  font-weight:300;
+  font-size:28px;
+  margin:5px 0;
+}
+
+.lookup-container, .card-container, .share-container{
+  position:relative;
+  display:block;
+  float:left;
+  width:420px;
+  padding: 5px;
+
+  margin:0 0 20px 0;
+  padding-bottom: 20px;
+  background:#fff;
+
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
+  z-index:3;
+}
+
+.lookup-container:before, .card-container:before, .share-container:before{
+  content:'';
+  position:absolute;
+  width:2px;
+  top: 40px;
+  left:-10px;
+  height:300px;
+  background: rgb(14, 47, 61);
+}
+
+.lookup-container{
+  width: 280px;
+  margin-right: 10px;
+}
+
+.card-container{
+    z-index:2;
+    -webkit-transform: translateY(-500px);
+}
+
+.share-container{
+    z-index:1;
+    width:430px;
+    border-bottom: solid 2px rgb(14, 47, 61);
+    margin-left:20px;
+}
+
+.card-container.selected, .share-container.selected{
+    /*background:rgb(231,231,231);*/
+}
+
+.card-container.onscreen, .share-container.onscreen{
+    -webkit-transform: translateY(0);
+}
+
+.share-container{
+    border-bottom: solid 0 rgb(14, 47, 61);
+    -webkit-transform: translateY(-600px);
+}
+
+.lookup-input, .lookup-input:focus, .meta-input, .meta-input:focus{
+  font-family:'source_sans_pro', sans-serif;
+  font-weight:400;
+  font-size:24px;
+  color:rgb(14, 47, 61);
+  
+  margin:0;
+  padding: 0 10px;
+
+  background:rgb(231,231,231);
+  border:solid 0px rgb(231,231,231);
+  outline: none;
+  
+  width:210px;
+  height:38px;
+  line-height:38px;
+  border:solid 0px #fff;
+  float:left;
+
+  white-space:nowrap;
+}
+
+.meta-input, .meta-input:focus{
+  width:240px;
+  height:100px;
+  line-height:28px;
+  white-space:normal;
+  margin-left:10px;
+  background-color:#fff;
+}
+
+.lookup-button{
+  display:inline-block;
+  background:rgb(203,222,96);
+  width:38px;
+  height:38px;
+  line-height:46px;
+  text-align:center;
+
+  margin:0;
+}
+
+.lookup-button, .lookup-button em{
+  color:rgb(105, 131, 73);
+  text-decoration:none;
+  font-size:24px;
+}
+
+.share-container ul, .options{
+  display:block;
+  float:left;
+  list-style:none;
+  margin:0 0 20px 0;
+  padding:0;
+}
+
+.share-container ul li ,.options li{
+  display:inline-block;
+}
+
+.share-container ul li a:link, .share-container ul li a:visited, .share-container ul li a:hover, .options li a{
+  display:inline-block;
+  width:200px;
+  text-decoration:none;
+  font-size:20px;
+  text-align:left;
+}
+
+.options li a{
+  text-align:center;
+}
+
+.options li a, .share-word{
+    height:36px;
+    line-height:36px;
+    color:rgb(105, 131, 73);
+    text-decoration:none;
+    font-size:24px;
+    background:rgba(203,222,96, 0);
+    border:solid 2px rgba(203,222,96,1);
+}
+
+.options li a.selected, .share-word.selected{
+    background:rgba(203,222,96, 1);
+}
+
+.share-word{
+  display:block;
+  padding:5px;
+  margin:50px 80px;
+  text-align:center;
+}
+
+.share-action a:link, .share-action a:visited, .share-action a:hover{
+    line-height:24px;
+    font-size:24px;
+    color:rgb(105, 131, 73);
+    text-decoration:none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.share-container ul li a.facebook{
+  color:rgb(59, 89, 152);
+}
+
+.share-container ul li a.twitter{
+  color:rgb(85,172,238);  
+  display:none;
+}
+
+.meaning{
+    font-weight: 300;
+    font-size:24px;
+    margin-top:20px;
+    padding: 5px;
+}
+
+.meaning .speech-part, .word .speech-part{
+    font-style:italic;
+}
+
+.current-card-container{
+    width:150px;
+    float:left;
+}
+
+.shareable-content{
+  min-height:210px;
+  margin-top:-10px;
+}
+
+.links-to{
+    font-size:18px;
+    margin:20px 10px;
+}

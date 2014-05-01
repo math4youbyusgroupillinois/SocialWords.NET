@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GeneratorMaster.master.cs" Inherits="SocialWords.Web.Views.Shared.GeneratorMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <div>
+        <asp:ContentPlaceHolder ID="ImagePlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>

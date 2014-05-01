@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="@ViewBag.Description" />
+    <meta property="og:title" content="@ViewBag.Title" />
+    <meta property="og:description" content="@ViewBag.Description" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="lexicum.net" />
+    <meta property="og:determiner" content="auto" />
+    <meta property="og:type" content="word" />
+    <meta property="og:image" content="@ViewBag.Image" />
+    <meta property="og:image:type" content="image/gif" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:audio" content="@ViewBag.Audio" />
+    <meta property="og:audio:type" content="audio/mpeg" />
+
+    <!-- Bootstrap -->
+    <link rel="icon" type="image/png" href="img/icon-16.png" />
+    <link href="styles/styles.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+    <div id="card" class="card">
+        <img src="@ViewBag.Image" />
+<!--
+        <p>
+            @ViewBag.Word
+        </p>
+-->
+    </div>
+    <h1>@ViewBag.Title</h1>
+    <p>
+        @ViewBag.Description
+    </p>
+</body>
+
+</html>

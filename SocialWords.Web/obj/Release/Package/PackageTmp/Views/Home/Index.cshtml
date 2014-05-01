@@ -1,0 +1,91 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn vocabulary in context - Lexicum helps you record and memorise words in foreign languages as you encounter them</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="vocabulary, foreign language, language learning, dictionary, quiz, flashcards, learning practice, learning context, vocabulary book, personalised learning, word acquisition, vocabulary building, memorising, spaced repetition, Leitner system, mobile learning, terminology, difficult words, word collection" />
+    <meta name="description" content="Lexicum is a vocabulary building tool that blends in the learner's language context. It offers a cross-platform electronic dictionary to look up words and grow a personal word collection, to be reinforced with flashcards." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Learn vocabulary in context - Lexicum helps you record and memorise words in foreign languages as you encounter them" />
+    <!-- duplicate of title -->
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="http://lexicum.net" />
+    <meta property="og:image" content="http://lexicum.net/img/icon-32.png" />
+    <!-- higher resolution than favicon -->
+    <meta property="og:description" content="Lexicum is a vocabulary building tool that blends in the learner's language context. It offers a cross-platform electronic dictionary to look up words and grow a personal word collection, to be reinforced with flashcards." />
+    <!-- duplicate of meta description -->
+
+    <!-- Bootstrap -->
+    <link rel="icon" type="image/png" href="img/icon-16.png" />
+    <link href="~/styles/styles.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+    <div class="header">
+      <h1>Pearson Word Sharing</h1>
+    </div>
+    <div class="main">
+      <div class="lookup-container">
+          <h2>1. Lookup a word</h2>
+          <div contenteditable="true" class="lookup-input">syzygy</div>
+          <a href="#lookup" class="lookup-button"><em class="icon-search"></em></a>
+      </div>
+      <div class="card-container">
+          <h2>2. Challenge your friends with</h2>
+          <ul class="options">
+              <li>
+                  <a id="question" class="selected" href="#">Question</a>
+              </li>
+              <li>
+                  <a id="definition" href="#">Definition</a>
+              </li>
+          </ul>
+          <div class="card-small-container">
+            <div id="card-small" class="card-small">
+                <p class="card-small-content">
+                    syzygy
+                </p>
+            </div>
+            <div class="meaning">
+                <span class="speech-part">(n.)</span>
+                <span>the straight line configuration of 3 celestial bodies (as the sun and earth and moon) in a gravitational system</span>
+            </div>
+          </div>
+          <div id="card-big" class="card hidden">
+              <p class="word">
+                  syzygy <span class="speech-part">(n.)</span>
+              </p>
+              <span class="meaning">
+                  the straight line configuration of 3 celestial bodies (as the sun and earth and moon) in a gravitational system
+              </span>
+          </div>
+          <div class="share-action">
+            <a class="share-button" href="#"><em class="icon-share"></em> Share</a>
+          </div>
+      </div>
+      <div class="share-container">
+          <h2>3. Share</h2>
+          <div class="shareable-content">
+            <div class="current-card-container"></div>
+            <div contenteditable="true" class="meta-input">Does anyone knows what <strong class="hash">#syzygy</strong> means? <br/> #english #dictionary</div>
+          </div>
+          <ul>
+            <li>
+                <a href="#" id="facebook" class="facebook"><em class="icon-facebook"></em> share on facebook</a>
+
+                <a href="#" class="twitter"><em class="icon-twitter"></em> share on twitter</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <script src="~/Scripts/index.js"></script>
+</body>
+
+</html>

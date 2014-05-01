@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="@ViewBag.Description" />
+
+    <meta property="og:title" content="@ViewBag.Title" />
+    <meta property="og:description" content="@ViewBag.Description" />
+    <meta property="og:url" content="@ViewBag.Url" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="lexicum.net" />
+    <meta property="og:determiner" content="auto" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="@ViewBag.Image" />
+    <meta property="og:image:type" content="image/gif" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+
+    <!-- Bootstrap -->
+    <link rel="icon" type="image/png" href="img/icon-16.png" />
+    <link href="~/styles/styles.css" rel="stylesheet" media="screen" />
+    @*<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>*@
+</head>
+
+<body class="partial">
+    <div id="card" class="card">
+        <p class="word">
+            @ViewBag.Word
+        </p>
+        <span class="meaning">
+            @ViewBag.Description
+        </span>
+    </div>
+    <div class="links-to">
+        <ul>
+            <li>
+                Transcript and audio of the word
+            </li>
+            <li>
+                Examples with the given word
+            </li>
+            <li>
+                Thesaurus definition of the word
+            </li>
+        </ul>
+
+        <a class="share-word selected" href="/home/index/">Share your own word</a>
+    </div>
+</body>
+</html>

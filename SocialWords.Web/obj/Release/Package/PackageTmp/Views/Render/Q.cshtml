@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn vocabulary in context - Lexicum helps you record and memorise words in foreign languages as you encounter them</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="vocabulary, foreign language, language learning, dictionary, quiz, flashcards, learning practice, learning context, vocabulary book, personalised learning, word acquisition, vocabulary building, memorising, spaced repetition, Leitner system, mobile learning, terminology, difficult words, word collection" />
+    <meta name="description" content="Lexicum is a vocabulary building tool that blends in the learner's language context. It offers a cross-platform electronic dictionary to look up words and grow a personal word collection, to be reinforced with flashcards." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Learn vocabulary in context - Lexicum helps you record and memorise words in foreign languages as you encounter them" />
+    <!-- duplicate of title -->
+    <meta property="og:type" content="product" />
+    <meta property="og:url" content="http://lexicum.net" />
+    <meta property="og:image" content="http://lexicum.net/img/icon-32.png" />
+    <!-- higher resolution than favicon -->
+    <meta property="og:description" content="Lexicum is a vocabulary building tool that blends in the learner's language context. It offers a cross-platform electronic dictionary to look up words and grow a personal word collection, to be reinforced with flashcards." />
+    <!-- duplicate of meta description -->
+
+    <!-- Bootstrap -->
+    <link rel="icon" type="image/png" href="img/icon-16.png" />
+    <link href="~/styles/styles.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+    <div id="card" class="card">
+        <p>
+            @ViewBag.Message
+        </p>
+    </div>
+</body>
+
+</html>

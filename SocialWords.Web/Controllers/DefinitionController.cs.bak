@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace SocialWords.Web.Controllers
+{
+    public class DefinitionController : Controller
+    {
+        Random r = new Random(); // can be done centrally for the entire application
+
+        //
+        // GET: /Definition/
+        public ActionResult Index(String word)
+        {
+            String def = "an event or condition that doesn’t cause harm but has the potential to do so.";
+            String form = "(n.)";
+            String[] titles = new String[] {
+                "Definition of the word “" + word + "”",
+                "This is what we mean by “" + word + "”",
+                "“" + word + "” means...",
+                "“" + word + "” has the meaning...",
+                "When we use “" + word + "” we mean...",
+                "What is “" + word + "”?",
+                "What does “" + word + "” mean?"
+            };
+            String[] descriptions = new String[] {
+                "“" + word + "” " + form + " is " + def,
+                word + " " + form + " - " + def,
+                "Definition: " + def
+            };
+
+            ViewBag.Word = word;
+            ViewBag.Description = descriptions[r.Next(descriptions.Length)];
+            ViewBag.Title = titles[r.Next(titles.Length)];
+
+            ViewBag.Image = "http://catalyst.lexicum.net/catalyst/facebook-story.png"; // just a placeholder
+
+            ViewBag.Audio = "http://mapto.ko64eto.com/po-zodia.mp3"; // just a placeholder
+            return View();
+        }
+	}
+}

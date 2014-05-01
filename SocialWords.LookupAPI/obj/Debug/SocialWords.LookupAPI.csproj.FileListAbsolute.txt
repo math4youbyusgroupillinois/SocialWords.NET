@@ -1,0 +1,16 @@
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\SocialWords.LookupAPI.dll.config
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\SocialWords.LookupAPI.dll
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\SocialWords.LookupAPI.pdb
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\Newtonsoft.Json.dll
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\System.Net.Http.Formatting.dll
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\System.Web.Http.dll
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\System.Web.Http.WebHost.dll
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\Newtonsoft.Json.xml
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\System.Net.Http.Formatting.xml
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\System.Web.Http.xml
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\System.Web.Http.WebHost.xml
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\obj\Debug\SocialWords.LookupAPI.csprojResolveAssemblyReference.cache
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\obj\Debug\SocialWords.LookupAPI.dll
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\obj\Debug\SocialWords.LookupAPI.pdb
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\ApiClient.dll
+C:\Pearson\Solution\SocialWords.Web\SocialWords.LookupAPI\bin\ApiClient.pdb

@@ -1,0 +1,46 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pearson Share Words</title>
+
+    <link href="~/styles/styles.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <div class="main">
+      <div class="header-container">
+          <img src="http://www.pearson.com/etc/designs/pearson-corporate/images/2010/blue/logo.gif" alt="Pearson Share Words" />
+      </div>
+      <div class="lookup-container">
+          <h1>1. Lookup a word</h1>
+          <div contenteditable="true" class="lookup-input"></div>
+          <a href="#lookup" class="lookup-button"><em class="icon-search"></em></a>
+      </div>
+      <div class="card-container">
+          <h1>2. Challange your friends</h1>
+          <div id="card" class="card">
+              <p>
+                  lexicum
+              </p>
+          </div>
+      </div>
+      <div class="meta-container">
+          <div contenteditable="true" class="meta-input">Hi friends, does anyone knows what <strong>#lexicum</strong> word means?</div>
+      </div>
+      <div class="share-container">
+          <h1>3. Share</h1>
+          <ul>
+            <li>
+                <a href="#" class="facebook"><em class="icon-facebook"></em> share on facebook</a>
+                <a href="#" class="twitter"><em class="icon-twitter"></em> share on twitter</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+</body>
+
+</html>

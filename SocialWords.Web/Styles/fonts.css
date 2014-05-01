@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-black-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-black-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-black-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-blackit-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-blackit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-blackit-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-blackit-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-blackit-webfont.svg#source_sans_problack_italic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-bold-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-extralight-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-extralight-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-extralight-webfont.svg#source_sans_proextralight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-extralightit-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-extralightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-extralightit-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-extralightit-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-extralightit-webfont.svg#source_sans_proXLtIt') format('svg');
+    font-weight: 200;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-it-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-it-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-it-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-it-webfont.svg#source_sans_proitalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/ssp/sourcesanspro-lightit-webfont.eot');
+    src: url('../fonts/ssp/sourcesanspro-lightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ssp/sourcesanspro-lightit-webfont.woff') format('woff'),
+         url('../fonts/ssp/sourcesanspro-lightit-webfont.ttf') format('truetype'),
+         url('../fonts/ssp/sourcesanspro-lightit-webfont.svg#source_sans_prolight_italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icons/icomoon.eot?420pki');
+    src:url('../fonts/icons/icomoon.eot?#iefix420pki') format('embedded-opentype'),
+        url('../fonts/icons/icomoon.woff?420pki') format('woff'),
+        url('../fonts/icons/icomoon.ttf?420pki') format('truetype'),
+        url('../fonts/icons/icomoon.svg?420pki#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bubble:before {
+    content: "\e600";
+}
+.icon-search:before {
+    content: "\e604";
+}
+.icon-close:before {
+    content: "\e601";
+}
+.icon-facebook:before {
+    content: "\e602";
+}
+.icon-twitter:before {
+    content: "\e603";
+}
+.icon-share:before {
+    content: "\e605";
+}

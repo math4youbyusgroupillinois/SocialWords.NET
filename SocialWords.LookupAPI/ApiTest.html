@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lexicum - Pearson Word Sharing</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <script lang="text/javascript">
+        jQuery.support.cors = true;
+        //var server = "http://localhost:42870/api/lookup/";
+        //var server = "http://localhost/SocialWords.LookupAPI/api/lookup/";
+        //var server = "http://192.168.10.38/SocialWords.LookupAPI/api/lookup/"
+        //var server = "http://localhost:37829/api/lookup/";
+
+        $(function () {
+            $("#testLookup").click(function () {
+                get("5");
+            });
+        });
+
+        function get(uri){
+            var $lookup = $("#lookup");
+            $.ajax({
+                url: server + uri,
+                contentType: "json",
+                success: function (data, status, jqXHR) {
+                    //alert(jqXHR.responseText);
+                    $("#response").html("<h3>done:&nbsp;&nbsp;&nbsp;" + uri + ": " + jqXHR.status + "</h3>" + jqXHR.responseText);
+                },
+                error: function(xhr, textStatus, errorThrown){
+                    $("#response").html("<h3>error:&nbsp;&nbsp;&nbsp;" + uri + "</h3>" + textStatus +
+                        "<br/>" + errorThrown + "<br/>Code: " + xhr.status);
+                }
+            });
+        }
+    </script>
+    <h1>Lexicum Pearson Word Sharing: Api Test</h1>
+    <input type="button" value="Test" id="testLookup" /><br />
+    <h1>call result:</h1>
+
+    <div id="response">
+        <!--test git-->
+    </div>
+
+</body>
+</html>

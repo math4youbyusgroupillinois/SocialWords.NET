@@ -1,0 +1,105 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="@ViewBag.Description" />
+
+    <meta property="og:title" content="@ViewBag.Title" />
+    <meta property="og:description" content="@ViewBag.Description" />
+    <meta property="og:url" content="@ViewBag.Url" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="lexicum.net" />
+    <meta property="og:determiner" content="auto" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="@ViewBag.Image" />
+    <meta property="og:image:type" content="image/gif" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+
+    <!-- Bootstrap -->
+    <link rel="icon" type="image/png" href="img/icon-16.png" />
+    <link href="~/styles/styles.css" rel="stylesheet" media="screen" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="header">
+      <h1>Pearson Word Sharing</h1>
+    </div>
+    <div class="main">
+      <div class="lookup-container">
+          <h2>1. Lookup a word</h2>
+          <div contenteditable="true" class="lookup-input">@ViewBag.Word</div>
+          <a href="#lookup" class="lookup-button"><em class="icon-search"></em></a>
+      </div>
+      <div class="card-container">
+          <h2>2. Challenge your friends with</h2>
+          <ul class="options">
+              <li>
+                  <a id="question" class="selected" href="#">Question</a>
+              </li>
+              <li>
+                  <a id="definition" href="#">Definition</a>
+              </li>
+          </ul>
+          <div class="card-small-container">
+            <div id="card-small" class="card-small">
+                <p class="card-small-content">
+                    @ViewBag.Word
+                </p>
+            </div>
+            <div class="meaning">
+                <span class="speech-part">(n.)</span>
+                <span>@ViewBag.Description</span>
+            </div>
+          </div>
+          <div id="card-big" class="card hidden">
+              <p class="word">
+                  @ViewBag.Word
+              </p>
+              <span class="meaning">
+                  @ViewBag.Description
+              </span>
+          </div>
+          <div class="share-action">
+            <a class="share-button" href="#"><em class="icon-share"></em> Share</a>
+          </div>
+      </div>
+      <div class="share-container">
+          <h2>3. Share</h2>
+          <div class="shareable-content">
+            <div class="current-card-container"></div>
+            <div contenteditable="true" class="meta-input">@ViewBag.Title</div>
+          </div>
+          <ul>
+            <li>
+                <!-- <a href="#" class="facebook"><em class="icon-facebook"></em> share on facebook</a> -->
+                <div id="fb_share" class="fb-share-button" data-href="http://pearson.lexicum.net/plugins/" data-type="icon_link"></div>
+                <a href="#" class="twitter"><em class="icon-twitter"></em> share on twitter</a>
+                @*<script>
+                </script>*@
+            </li>
+          </ul>
+      </div>
+    </div>
+    <script src="~/Scripts/index.js"></script>
+</body>
+</html>
